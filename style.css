@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Special+Elite:regular);
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr;
+}
+.header {
+  display: flex;
+  font-family: "Special Elite";
+  background-color: gold;
+  padding: 10px;
+  user-select: none;
+}
+.btn {
+  all: unset;
+  position: absolute;
+  right: 5px;
+  top: 5%;
+  border: 2px solid black;
+  padding: 2px;
+  box-shadow: 2px 5px darkgray;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: antiquewhite;
+}
+.btn:active {
+  background-color: aqua;
+}
+.count-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(gold, gold);
+  background-repeat: no-repeat;
+  background-size: 0%;
+  transition: 0.2s ease-out;
+}
+#num {
+  font-size: 500%;
+  background-color: transparent;
+  user-select: none;
+}
+footer {
+  user-select: none;
+}
