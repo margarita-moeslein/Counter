@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Space Mono";
+  font-size: 20px;
+  line-height: 3rem;
+  --clr-accent: rgb(255, 215, 0);
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 1.5em;
+  background-color: var(--clr-accent);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#reset-btn {
+  padding: 0.5em 1.2em;
+  border: 2px solid black;
+  font-family: "Space Mono";
+  font-size: 1.5rem;
+  box-shadow: 5px 5px rgb(225, 225, 225);
+}
+
+main {
+  --progress: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    var(--clr-accent),
+    var(--clr-accent)
+  );
+  background-size: var(--progress) 100%;
+  background-repeat: no-repeat;
+}
+
+#counting-number {
+  font-size: 5rem;
+}
